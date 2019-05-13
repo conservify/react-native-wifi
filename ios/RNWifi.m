@@ -93,5 +93,10 @@ RCT_REMAP_METHOD(getCurrentWifiSSID,
              };
 }
 
++ (BOOL)requiresMainQueueSetup
+{
+    return YES;
+}
+
 @end
 

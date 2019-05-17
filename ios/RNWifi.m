@@ -86,13 +86,6 @@ RCT_REMAP_METHOD(getCurrentWifiSSID,
     reject(@"cannot_detect_ssid", @"Cannot detect SSID", nil);
 }
 
-- (NSDictionary*)constantsToExport {
-    // Officially better to use UIApplicationOpenSettingsURLString
-    return @{
-             @"settingsURL": @"App-Prefs:root=WIFI"
-             };
-}
-
 + (BOOL)requiresMainQueueSetup
 {
     return YES;
